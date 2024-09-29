@@ -52,6 +52,41 @@ button {
   border-radius: 5px;
 }
 
+.news {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+}
+.news form {
+  background-color: rgb(40, 40, 40);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  color: rgb(183, 181, 181);
+}
+.news form input {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(183, 181, 181);
+}
+.news .trends {
+  background-color: rgb(40, 40, 40);
+  padding: 20px;
+  list-style: none;
+  min-width: 250px;
+  border-radius: 10px;
+}
+.news .trends li {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
 .feed {
   background-color: black;
   color: white;
@@ -245,4 +280,41 @@ main #post-tweets .input-area .buttons button:hover {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+.tweets-area .tweet .body {
+  width: 100%;
+  margin-top: 10px;
+}
+.tweets-area .tweet .body .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tweets-area .tweet .body .info {
+  display: flex;
+  gap: 10px;
+}
+.tweets-area .tweet .body .info p {
+  color: gray;
+  font-size: 16px;
+}
+.tweets-area .tweet .body .content img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tweets-area .tweet .body .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.tweets-area .tweet .body .buttons button {
+  background: none;
+  color: gray;
+}
+.tweets-area .tweet .body .buttons button:hover {
+  background-color: rgba(236, 236, 236, 0.25);
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
