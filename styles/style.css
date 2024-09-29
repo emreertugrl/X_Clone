@@ -289,6 +289,8 @@ main #post-tweets .input-area .buttons button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  color: white;
 }
 .tweets-area .tweet .body .info {
   display: flex;
@@ -298,12 +300,21 @@ main #post-tweets .input-area .buttons button:hover {
   color: gray;
   font-size: 16px;
 }
+.tweets-area .tweet .body .content {
+  text-decoration: none;
+  color: white;
+}
 .tweets-area .tweet .body .content img {
   width: 100%;
   border-radius: 10px;
   max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.tweets-area .tweet .body .content #videos {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 20px;
 }
 .tweets-area .tweet .body .buttons {
   display: flex;

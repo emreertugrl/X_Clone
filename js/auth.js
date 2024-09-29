@@ -1,5 +1,8 @@
+import { API } from "./api.js";
+import { setLocal } from "./helper.js";
 import { authEle } from "./ui.js";
-
+// api örneğini aldık
+const api = new API();
 // Regex: Regex belirli şartları kontrol etmek için sorgu yapılarını içeren koddur.
 // * Enaz 6 karakter,1 küçük harf,1 büyük harf,birde sayı
 const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6,}$/;
@@ -25,7 +28,7 @@ const renderWarns = (nameWarning, passWarning) => {
 };
 
 // Auth sayfasında yer alan form gönderildiğinde çalışacak fonksiyon
-authEle.loginForm.addEventListener("submit", (e) => {
+authEle.loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   // Giriş formunda verilerin alınması
   const name = authEle.nameInp.value;
@@ -54,6 +57,9 @@ authEle.loginForm.addEventListener("submit", (e) => {
   renderWarns(nameWarning, passWarning);
 
   if (!nameWarning && !passWarning) {
+    // api'den kullanıcı bilgisini çekip local storage'a kaydet
+    const userData = await api.getUser(name);
+    setLocal("user", userData);
     // beni ana sayfaya yönlendir
     // ana sayfaya yönlendirme
     window.location = "/";

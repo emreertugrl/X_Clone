@@ -229,6 +229,8 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-decoration: none;
+        color: white;
       }
       .info {
         display: flex;
@@ -239,11 +241,18 @@ main {
         }
       }
       .content {
+        text-decoration: none;
+        color: white;
         img {
           width: 100%;
           border-radius: 10px;
           max-height: 300px;
           object-fit: cover;
+        }
+        #videos {
+          width: 100%;
+          max-height: 500px;
+          border-radius: 20px;
         }
       }
 
