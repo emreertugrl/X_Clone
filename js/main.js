@@ -6,9 +6,14 @@ import {
   renderInfo,
   renderLoader,
   renderTimeLine,
+  renderUserInfo,
   renderUserPage,
 } from "./ui.js";
-
+// sayfa yüklendiğinde çalışacak fonksiyon
+document.addEventListener("DOMContentLoaded", () => {
+  renderUserInfo(user);
+});
+// kullanıcı verilerini al
 const user = getLocal("user");
 //
 const api = new API();
