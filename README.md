@@ -38,7 +38,7 @@ To develop the project, follow these steps:
 
 ## Visual
 
-<img src="x_clone.gif" alt="x-clone">
+<img src="./images/x_clone.gif" alt="x-clone">
 
 ## Contact
 
