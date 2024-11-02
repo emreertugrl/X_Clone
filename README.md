@@ -38,7 +38,7 @@ To develop the project, follow these steps:
 
 ## Visual
 
-<img src="/images/x_clone.gif" alt="gmail-app-gif">
+<img src="/x_clone.gif" alt="x-clone">
 
 ## Contact
 
